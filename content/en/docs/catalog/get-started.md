@@ -19,13 +19,13 @@ Catalog is an open, standards-based metadata repository that enables Mendix deve
 
 ## 2 Your Company's Catalog
 
-Log in with your company credentials to catalog.mendix.com to see what metadata has been shared in your company. 
+Log in with your company credentials to [catalog.mendix.com](https://catalog.mendix.com/) to see what metadata has been shared in your company. 
 
 Depending on your [user role](/catalog/manage-data-sources/user-roles/) and use case, you can do the following:
 
 * [Register data sources](/catalog/register-data-sources/) to be used in other apps in your company
 * [Consume data sources](/catalog/consume/) in your company's Catalog
-* [Manage data sources](/catalog/manage-data-sources/) as a data source owner or as an administrator
+* [Manage data sources](/catalog/manage-data-sources/) as a data source owner or administrator
 
 ## 3 Catalog and App Deployment Methods
 
@@ -37,7 +37,7 @@ You can use the Catalog with any deployment method, though there are differences
 | [Private Cloud](/developerportal/deploy/private-cloud/), [Tencent Cloud](/developerportal/deploy/tencent-deploy/) | Using the [Registration API](/catalog/register/register-data/#register-services) |
 | [On-Premises](/developerportal/deploy/on-premises-design/) | Using the [Registration API](/catalog/register/register-data/#register-services) |
 
-Once data sources are registered, the metadata is stored in the Catalog so that you can share these sources with authorized users in your company.
+Once data sources are registered, the metadata is stored in the Catalog so you can share these sources with authorized users in your company.
 
 ## 4 Try It Out
 
@@ -47,4 +47,4 @@ Build on this experience by learning how to [write data to another app](/catalog
 
 ## 5 Processes and Properties
 
-[Catalog](/catalog/) goes into detailed information on the Catalog's processes and properties. This is helpful if you are looking for explanations of what you see in the Catalog UI (catalog.mendix.com) and how parts of the UI relate to each other.
+[Catalog](/catalog/) goes into detailed information on the Catalog's processes and properties. This is helpful if you are looking for explanations of what you see in the [Catalog UI](https://catalog.mendix.com/) and how parts of the UI relate to each other.

@@ -9,9 +9,9 @@ tags: ["marketplace", "marketplace component", "business events", "data broker",
 
 ## 1 Introduction
 
-With [Mendix Business Events](https://marketplace.mendix.com/link/component/202649), applications can signal when something important happens, and can independently subscribe to these events if they want to be informed. Business events are like a mailing list to share event notifications between apps. The key difference between business events and traditional communication between apps, like REST or Web Services, is that there is no direct communication between the different apps. 
+Business events are like a mailing list to share event notifications between applications. With [Mendix Business Events](https://marketplace.mendix.com/link/component/202649), apps can signal when something important happens and can independently subscribe to these events if they want to be informed. The key difference between business events and traditional communication between apps, like REST or Web Services, is that there is no direct communication between the different apps. 
 
-To deliver these events reliably between your applications, an event broker is required. For apps running the Mendix cloud on licensed nodes, you will need to purchase a license for a [Mendix Event Broker](#mendix-event-broker). 
+To deliver these events reliably between your apps, an event broker is required. For apps running the Mendix Cloud on licensed nodes, you will need to purchase a license for a [Mendix Event Broker](#mendix-event-broker). 
 
 {{% alert color="info" %}}
 Business events are supported in Studio Pro [9.18](/releasenotes/studio-pro/9.18/) and above, and currently can only be deployed to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/).{{% /alert %}} 
@@ -21,16 +21,16 @@ Business events are supported in Studio Pro [9.18](/releasenotes/studio-pro/9.18
 Business events help you automate the resulting actions when something happens in your organization. The following are examples of when business events can be useful:
 
 * Uploading a payment receipt in one app, while another app processes the outgoing payment in the company's ledger
-* Making an appointment with a service provider in an appointment app, then needing it to be added to the scheduling app of the service provider
-* Customers placing an order in a webshop, and other apps need to take follow-up actions like scheduling shipment, sending the invoice, and reordering inventory stock
+* Making an appointment with a service provider in an appointment app, then adding it to the service provider's scheduling app
+* Customers placing an order in a webshop, and follow-up actions in other apps like scheduling shipments, sending the invoice, and reordering inventory stock
 
 ### 1.2 Prerequisites
 
 To use Mendix Business Events, you will need the following:
 
 * The [Mendix Business Events](https://marketplace.mendix.com/link/component/202649) module from the Mendix Marketplace
-* Studio Pro [9.18](/releasenotes/studio-pro/9.18/) and above for [one-way events](#one-way-be), Studio Pro [9.24](/releasenotes/studio-pro/9.24/) and above for [two-way events](#two-way-be)
-* An event broker, either a licensed [Mendix Event Broker](#mendix-event-broker) for apps running in the Mendix Cloud or the [local testing](#local-testing) broker (see [Deployment](#deployment))
+* Studio Pro [9.18](/releasenotes/studio-pro/9.18/) and above for [one-way events](#one-way-be), or Studio Pro [9.24](/releasenotes/studio-pro/9.24/) and above for [two-way events](#two-way-be)
+* An event broker, either a licensed [Mendix Event Broker](#mendix-event-broker) for apps running in the Mendix Cloud or the [local testing](#local-testing) broker (for more information, see the [Deployment](#deployment) section below)
 * [Docker](https://www.docker.com/) for local deployment
 
 ## 2 Licensing {#licensing}

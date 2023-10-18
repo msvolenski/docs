@@ -43,7 +43,7 @@ To work with business events, import the [Mendix Business Events](https://market
 
 ### 3.1 Configuring Local Deployments {#config-local-deployment}
 
-To test on your development workstation, run the Event Broker on your machine using Docker. The required configuration can be found in the [local setup for the event broker tool](https://github.com/mendix/event-broker-tools).
+To test on your development workstation, run the Event Broker on your machine using [Docker](/developerportal/deploy/docker-deploy/). The required configuration can be found in the [local setup for the event broker tool](https://github.com/mendix/event-broker-tools).
 
 For local deployment, you need to set the **ChannelName** and **ServerUrl** constants. These constants are best configured by going to **App Settings** > **Configuration**. Click **New**, and in the **Constants** tab, you can set the required values.
 

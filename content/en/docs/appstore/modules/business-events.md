@@ -45,7 +45,7 @@ To work with business events, import the [Mendix Business Events](https://market
 
 To test on your development workstation, run the Event Broker on your machine using [Docker](/developerportal/deploy/docker-deploy/). The required configuration can be found in the [local setup for the event broker tool](https://github.com/mendix/event-broker-tools).
 
-For local deployment, you need to set the **ChannelName** and **ServerUrl** constants. These constants are best configured by going to **App Settings** > **Configuration**. Click **New**, and in the **Constants** tab, you can set the required values.
+For local deployment, set the **ChannelName** and **ServerUrl** constants. These constants are best configured by going to **App Settings** > **Configuration**. Click **New**, and in the **Constants** tab, you can set the required values.
 
 Set the constants as follows:
 
@@ -57,27 +57,25 @@ Set the constants as follows:
 
 ### 3.2 Changing Logging Interval (Optional)
 
-Optionally you can set **SummaryLogIntervalSeconds** to a different value. The default value 120, which means if events are consumed or produced, an overview of what was consumed or produced will be logged at `INFO` level every 120 seconds. When configured with 0 or a negative number, this additional logging will not take place at all.
+Optionally, you can set **SummaryLogIntervalSeconds** to a different value. The default value 120, which means if events are consumed or produced, an overview of what was consumed or produced will be logged at `INFO` level every 120 seconds. When configured with 0 or a negative number, this additional logging will not take place at all.
 
 ## 4 Usage
 
-This section explains how to use business events in Mendix apps with the Mendix Business Events module.
-
 Usage and user experience differs depending on which versions of Studio Pro you are using:
 
-* Studio Pro [9.18](/releasenotes/studio-pro/9.18/) through [9.23](/releasenotes/studio-pro/9.23/) support published and consumed business event services with one publishing app and multiple consuming apps ([one-way events](#one-way-be))
-* Studio Pro [9.24](/releasenotes/studio-pro/9.24/) and above supports events defined centrally by one app for a specific use case, and other apps sending or receiving these predefined events ([two-way events](#two-way-be))
+* Studio Pro [9.18](/releasenotes/studio-pro/9.18/) through [9.23](/releasenotes/studio-pro/9.23/) support published and consumed business event services with one publishing app and multiple consuming apps ([one-way events](#one-way-be)).
+* Studio Pro [9.24](/releasenotes/studio-pro/9.24/) and above supports events defined centrally by one app for a specific use case, and other apps sending or receiving these predefined events ([two-way events](#two-way-be)).
 
 ### 4.1 Using Business Events (Studio Pro 9.18 through 9.23) {#one-way-be}
 
 Studio Pro 9.18 through 9.23 support the first experience of business events, sometimes called *one way* business events. In these versions, business events are published by an app, and one or more apps consume, or subscribe to, the events.
 
 {{% alert color="info" %}}
-If you are running with Studio Pro 9.24 and above, skip down to [Creating a Service, and Sending/Receiving Business Events in Studio Pro 9.24](#two-way-be). For modelling with any version, see [Modelling with Business Events](#be-modelling).{{% /alert %}}
+If you are running Studio Pro 9.24 and above, skip down to [Creating a Service, and Sending/Receiving Business Events in Studio Pro 9.24](#two-way-be). For modelling with any version, see [Modelling with Business Events](#be-modelling).{{% /alert %}}
 
 #### 4.1.1 Creating a Published Business Event Service {#create-be}
 
-A **Published Business Event Service** contains a definition of the business events provided by this service. A document can be exported from the published service, to inform other developers what the published business event service provides. This is an AsyncAPI document, similar to an OpenAPI or WSDL contract.
+A **Published Business Event Service** contains a definition of the business events provided by this service. A document can be exported from the published service to inform other developers what the published business event service provides. This is an AsyncAPI document, similar to an OpenAPI or WSDL contract.
 
 1. Right-click on the module folder, hover over **Add other**, and click **Published Business Event Service**.
 2. Provide the name for your service and **OK** to create it.

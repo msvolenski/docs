@@ -106,11 +106,11 @@ To consume a business event, you first need to create a **Consumed Business Even
 There are two ways to subscribe to, or consume a specific business event:
 
 * **Add** the subscription in the [consumed business event service](#consume-be)
-* **Drag and drop** the business event from the [Integration Pane](/refguide/integration-pane/) to your domain model
+* **Drag and drop** the business event from the [Integration pane](/refguide/integration-pane/) to your domain model
 
 ##### 4.1.3.1 Automatically Created Event Handler Microflow and Entity
 
-When you click **Add** to add the events from the AsyncAPI document into your module, Studio Pro will automatically create a **persistable** consumed entity within your domain model, and an **Event Handler** microflow to manage the flow of the Event after delivery. The **Event Handler** microflow is created in the same directory as your service.
+When you add events from the AsyncAPI document into your module, Studio Pro will automatically create a persistable consumed entity within your domain model, and an **Event Handler** microflow to manage the flow of the event after delivery. The **Event Handler** microflow is created in the same directory as your service.
 
 You can use the payload of the event as an entity:
 {{< figure src="/attachments/appstore/modules/business-events/payload-event-entity-2.png" >}}
@@ -130,7 +130,7 @@ Upgrade your apps to Studio Pro [9.24](/releasenotes/studio-pro/9.24/) and above
 
 ### 4.2 Using Business Events (Studio Pro 9.24 and Above) {#two-way-be}
 
-Studio Pro 9.24 and above supports newer behavior of business events, sometimes called *two way* business events. In these versions, business events are published by an app, and one or more apps consume, or subscribe to, the events. A publisher can also consume a business event of some other publishing app, and a subscriber can publish a business event to another app.
+Studio Pro 9.24 and above supports newer business event behaviors, sometimes called two way business events. In these versions, business events are published by an app and one or more apps consume, or subscribe to, the events. A publisher can also consume a business event of some other publishing app, and a subscriber can publish a business event to another app.
 
 {{% alert color="info" %}}
 If you are modelling in Studio Pro 9.18 through 9.23, go back up to [Publishing and Consuming Business Events in Studio Pro 9.18 through 9.23](#one-way-be), or learn how [migrating business event apps](#migrate-two-way-be) to Studio Pro 9.24 and above works. For modelling with any version, see [Modelling with Business Events](#be-modelling).{{% /alert %}}
@@ -139,16 +139,14 @@ If you are modelling in Studio Pro 9.18 through 9.23, go back up to [Publishing 
 
 In your defining app, you can create a new service by doing the following:
 
-1. Right-click on the module folder, hover over **Add other**, then click **Business Event Service**.
+1. Right-click on the module folder, hover over **Add other**, then click **Business event service**.
 2. Select **Create a new business event service**.
-3. Enter a **Document name** for the [business event service document](/refguide/business-event-services/)
+3. Enter a **Document name** for the [business event service document](/refguide/business-event-services/).
 4. Click **OK**. 
 
 The business event service document is open in Studio Pro:
 
 {{< figure src="/attachments/appstore/modules/business-events/new-business-event-service.png" >}}
-
-In the [next section](#add-be-definitions), you will define the information included in your events, as well as what the service will implement.
 
 ##### 4.2.1.1 Adding Event Definitions {#add-be-definitions}
 
@@ -164,7 +162,7 @@ Start with the first step, seen in the image below:
 
 In the **General** section, provide the **Event name** and **Description** to let others know what the service is about.
 
-In the **Attributes** section, click **Add** to define attributes. Changes you make here later might lead to breaking changes if the entity the attribute belongs to is consumed, though related entities will be updated automatically.
+In the **Attributes** section, click **Add** to define attributes. Changes you make here later might lead to breaking changes if the entity the attribute belongs to is consumed. Related entities will be updated automatically.
 
 * ***Step 2: Decide what other apps can do and what service this will implement**
 

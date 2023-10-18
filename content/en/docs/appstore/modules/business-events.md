@@ -68,7 +68,7 @@ Usage and user experience differs depending on which versions of Studio Pro you 
 
 ### 4.1 Using Business Events (Studio Pro 9.18 through 9.23) {#one-way-be}
 
-Studio Pro 9.18 through 9.23 support the first experience of business events, sometimes called *one way* business events. In these versions, business events are published by an app, and one or more apps consume, or subscribe to, the events.
+Studio Pro 9.18 through 9.23 support the first experience of business events, sometimes called one way business events. In these versions, business events are published by an app, and one or more apps consume, or subscribe to, the events.
 
 {{% alert color="info" %}}
 If you are running Studio Pro 9.24 and above, skip down to [Creating a Service, and Sending/Receiving Business Events in Studio Pro 9.24](#two-way-be). For modelling with any version, see [Modelling with Business Events](#be-modelling).{{% /alert %}}
@@ -78,17 +78,17 @@ If you are running Studio Pro 9.24 and above, skip down to [Creating a Service, 
 A **Published Business Event Service** contains a definition of the business events provided by this service. A document can be exported from the published service to inform other developers what the published business event service provides. This is an AsyncAPI document, similar to an OpenAPI or WSDL contract.
 
 1. Right-click on the module folder, hover over **Add other**, and click **Published Business Event Service**.
-2. Provide the name for your service and **OK** to create it.
+2. Provide the name for your service and click **OK**.
 3. If needed, select an **Event Name Prefix**. Use this to distinguish events from other ones in your company, like in a different department. This ensures that your events are uniquely named. This field is empty by default. 
 4. Once you have the Service created, click **Add** to link your modelled **PublishedBusinessEvent** entity as an event.
-5. Either select an existing **PublishedBusinessEvent** entity, or click **New** to create a new published entity there.
+5. Either select an existing **PublishedBusinessEvent** entity, or click **New** to create a new published entity.
 6. Once you have all of your entities linked into the **Published Business Event Service**, export it to be shared as an AsyncAPI document in YAML format.
 
 {{% alert color="info" %}}
 When deploying an app with one or more **Published Business Event** services, channels will be created in the Mendix Event Broker for every event of the service. (This works similarly to how tables are created in a database for persistable entities.) If you reuse a module with published events in multiple apps, multiple independent channels will be created. Apps interested in receiving events will need to subscribe to every event or channel independently. 
 {{% /alert %}}
 
-To receive or consume business events, an application needs to subscribe to one or more business events and define which microflow is responsible for handling the received event. This is done in a reliable way: if the receiving app is unavailable the event will be delivered once the app is available. If the microflow handling the event fails, it will be retried.
+To receive or consume business events, an application needs to subscribe to one or more business events and define which microflow is responsible for handling the received event. If the receiving app is unavailable, the event will be delivered once the app is available. If the microflow handling the event fails, it will be retried.
 
 #### 4.1.2 Create a Consumed Business Event Service {#consume-be}
 

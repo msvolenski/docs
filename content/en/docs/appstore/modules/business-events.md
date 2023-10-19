@@ -201,7 +201,7 @@ In Studio Pro [10.0](/releasenotes/studio-pro/10.0/) and above, enumerations are
 
 To use an existing business service in Studio Pro 9.24 and above, do the following:
 
-1. Right-click on the module folder, hover over **Add other**, then click **Business Event Service**.
+1. Right-click on the module folder, hover over **Add other**, then click **Business event ervice**.
 2. Select **Use an existing business event service**.
 3. Click **Browse** and navigate to the YAML file you [exported from the publishing app](#create-be).
 4. Enter a **Document name**, or use the default name, for the [business event service document](/refguide/business-event-services/).
@@ -213,16 +213,16 @@ The business event service document is open in Studio Pro:
 
 ##### 4.2.2.1 Publishing and Subscribing to Business Events
 
-After following the instructions in [Using an Existing Business Event Service](#two-way-be-create), you can publish or subscribe (or both, depending on the [service definitions](#add-be-definitions)) in the following ways:
+After following the steps in [Using an Existing Business Event Service](#two-way-be-create), you can publish or subscribe (or both, depending on the [service definitions](#add-be-definitions)) in the following ways:
 
 * Open the business service document and click **Add**
-* **Drag and drop** the business event from the [Integration Pane](/refguide/integration-pane/) to your domain model
+* **Drag and drop** the business event from the [Integration pane](/refguide/integration-pane/) to your domain model
 
 To publish a business event service, you need to use it in a microflow.
 
 #### 4.2.3 Automatically Created Event Handler Microflow and Entity {#two-way-be-handler}
 
-When you click **Add** to add the events from the document into your module, Studio Pro will automatically create a **persistable** consumed entity within your domain model and an **Event Handler** microflow (**Handle_BE**) to manage the flow of the event after delivery. The **Event Handler** microflow is created in the same directory as your service. 
+When you add the events from the document into your module, Studio Pro will automatically create a persistable consumed entity within your domain model and an **Event Handler** microflow (**Handle_BE**) to manage the flow of the event after delivery. The **Event Handler** microflow is created in the same directory as your service. 
 
 Currently, we don’t support multiple subscribers to the same business event within the same app.
 

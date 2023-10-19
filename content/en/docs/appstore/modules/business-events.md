@@ -201,7 +201,7 @@ In Studio Pro [10.0](/releasenotes/studio-pro/10.0/) and above, enumerations are
 
 To use an existing business service in Studio Pro 9.24 and above, do the following:
 
-1. Right-click on the module folder, hover over **Add other**, then click **Business event ervice**.
+1. Right-click on the module folder, hover over **Add other**, then click **Business event service**.
 2. Select **Use an existing business event service**.
 3. Click **Browse** and navigate to the YAML file you [exported from the publishing app](#create-be).
 4. Enter a **Document name**, or use the default name, for the [business event service document](/refguide/business-event-services/).

@@ -16,13 +16,13 @@ Add a [published REST service](/refguide/published-rest-service/) to expose your
 
 For an overview of the available options when you add a published service, see [Published REST Service](/refguide/published-rest-service/).
 
-You can easily expose an entity via REST by right-clicking the entity in the [domain model](/refguide/domain-model/) and selecting [Expose as REST resource](/refguide/generate-rest-resource/).
+You can easily expose an entity via REST by right-clicking the entity in the [Domain model](/refguide/domain-model/) and selecting [Expose as REST resource](/refguide/generate-rest-resource/).
 
 To publish a microflow as a REST operation, right-click anywhere in the editor and select [Publish as REST service operation](/refguide/publish-microflow-as-rest-operation/).
 
 ## 3 Authentication {#authorization}
 
-Published REST services can be secured with basic authentication, active session authentication and custom authentication. Basic and active session authentication are the default, and are automatically applied when you set the [security level](/refguide/app-security/) of your app to **Prototype / demo**  or **Production**.
+Published REST services can be secured with basic authentication, active session authentication, and custom authentication. Basic and active session authentication are the default and are automatically applied when you set the app's [security level](/refguide/app-security/) to **Prototype / demo**  or **Production**.
 
 If you don't want basic authentication, there are three options:
 

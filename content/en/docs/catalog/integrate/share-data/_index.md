@@ -16,14 +16,14 @@ aliases:
 
 ## 1 Introduction
 
-This how-to will demonstrate how easy it is to build apps using data from different sources using the Catalog. The steps describe the following: 
+This how-to demonstrates how  to build apps using data from different sources using the Catalog. The steps describe the following: 
 
-* Create an app in Mendix Studio Pro
-* Publish an entity from the app and register it in the Catalog 
-* Use the Catalog to explore the data sources from the organization that are registered as assets 
-* Connect to the registered asset that you published earlier and use it in a new app
-* Change data in the original app and see it updated in the new or consuming app
-* See the network of shared data in the Landscape
+1. Create an app in Mendix Studio Pro
+2. Publish an entity from the app and register it in the Catalog 
+3. Use the Catalog to explore the data sources from the organization that are registered as assets 
+4. Connect to the registered asset that you published earlier and use it in a new app
+5. Change data in the original app and see it updated in the new or consuming app
+6. See the network of shared data in the Landscape
 
 ## 2 Prerequisites
 

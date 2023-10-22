@@ -27,7 +27,7 @@ This how-to demonstrates how  to build apps using data from different sources us
 
 ## 2 Prerequisites
 
-Before starting this how-to, make sure you have completed the following prerequisites:
+Before you start, make sure you have completed the following prerequisites:
 
 * Install Mendix Studio Pro [8.14.0 or above](https://marketplace.mendix.com/link/studiopro/)
 
@@ -36,14 +36,14 @@ Before starting this how-to, make sure you have completed the following prerequi
 Follow these steps to create a simple app in Mendix Studio Pro. 
 
 1. In Studio Pro, click **New App** to create a new app using the **Blank** app template. Fill in the **App Name** as *{yourname}CustomerServiceApp* and select **Create app**. 
-2. In the App Explorer, double-click the **Domain Model** in **MyFirstModule**. 
-3. In the **Toolbox**, select **Entity** and drag it into the domain model.
-4. Double-click the entity to open its properties and set its **Name** to *Customer*.
+2. In the App Explorer, double-click the **Domain model** in **MyFirstModule**. 
+3. In the **Toolbox**, select **Entity** and drag it into the Domain model.
+4. Double-click the entity to open its properties and set the **Name** to *Customer*.
 5. In the **Attributes** tab, click **New** and do the following:
-    1. In the **Add Attribute** dialog box, set **Name** to *CustomerID* and set to **Type** to *Autonumber*.
+    1. In the **Add Attribute** dialog box, set the **Name** to *CustomerID* and **Type** to *Autonumber*.
     2. Click **OK** to create the attribute.
 
-6. Repeat steps 5a and 5b to create attributes *FirstName*, *LastName*, *CompanyName*, *Address* and set type to *String* for all of them. 
+6. Repeat steps 5a and 5b to create attributes *FirstName*, *LastName*, *CompanyName*, *Address* and set the **Type** to *String* for all of them. 
 
     {{< figure src="/attachments/catalog/share-data/entity-properties-pane.png" >}}
 
@@ -56,11 +56,11 @@ Follow these steps to create a simple app in Mendix Studio Pro.
     {{< figure src="/attachments/catalog/share-data/overview-pages-for-customer-entity.png" >}}
 
 11. In the **App Explorer**, double-click **Home_Web** to open the **Home_Web** page.
-12. From the **App Explorer** drag **Customer_Overview** into the empty **Auto-fill** container under the *Home* banner.
+12. From the **App Explorer**, drag **Customer_Overview** into the empty **Auto-fill** container under the **Home** banner.
 
-You have created a simple app with the entity **Customer**, and a web page where we can view and edit details for this entity. 
+You have created a simple app with the entity **Customer**, and a web page where you can view and edit the details. 
 
-Go ahead and customize the home page further by changing the banner text.
+You can customize the home page further by changing the banner text.
 
 ## 4 Publishing to the Catalog {#publishing}
 

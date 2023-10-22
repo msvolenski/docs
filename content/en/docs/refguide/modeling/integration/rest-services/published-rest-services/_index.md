@@ -26,15 +26,15 @@ Published REST services can be secured with basic authentication, active session
 
 If you don't want basic authentication, there are three options:
 
-* You can choose to have [no authentication](/refguide/published-rest-service/#authentication) for specific published REST services.
-* When you [allow anonymous users](/refguide/app-security/#anonymous-users) to your app, published REST services become available without authentication. This only applies if the anonymous user has been selected for the allowed roles for the published service, and **Username and password** has been selected as the authentication method.
+* You can have [no authentication](/refguide/published-rest-service/#authentication) for specific published REST services.
+* You can [allow anonymous users](/refguide/app-security/#anonymous-users) to your app, which makes published REST services available without authentication. This only applies if the anonymous user has been selected for the allowed roles for the published service. **Username and password** must be be selected as the authentication method.
 * You can implement [custom authentication using a microflow](/refguide/published-rest-service/#authentication-microflow).
 
 {{% alert color="warning" %}}
 Note that web service users cannot access REST services.
 {{% /alert %}}
 
-For more details, see [Published REST Routing](/refguide/published-rest-routing/) and the [Requires Authentication](/refguide/published-rest-service/#authentication) section in *Published REST Service*.
+For more information, see [Published REST Routing](/refguide/published-rest-routing/) and the [Requires Authentication](/refguide/published-rest-service/#authentication) section in *Published REST Service*.
 
 ## 4 Documentation {#interactive-documentation}
 

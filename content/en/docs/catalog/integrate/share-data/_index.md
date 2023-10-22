@@ -64,29 +64,29 @@ You can customize the home page further by changing the banner text.
 
 ## 4 Publishing to the Catalog {#publishing}
 
-You need to register the **Customer** entity in the Catalog to use this entity in other apps. To do this, you need to expose the **Customer** entity in a *Published OData service* in Mendix Studio Pro. OData v3 and OData v4 are REST-based protocols and standard formats for registering services in the Catalog. 
+You need to register the **Customer** entity in the Catalog to use this entity in other apps. To do this, expose the **Customer** entity in a [Published OData Service](/refguide/published-odata-services/) in Mendix Studio Pro. OData v3 and OData v4 are REST-based protocols and the standard format for registering services in the Catalog. 
 
 Do the following:
 
-1. In the App Explorer, right-click **MyFirstModule**. From the drop-down list, select **Add a folder**. Name it  *APIs*.
+1. In the App Explorer, right-click **MyFirstModule**. From the drop-down list, select **Add a folder**. Name this folder  *APIs*.
 
-    {{% alert color="info" %}}The published OData service functions as an API to your app. Some apps may have several published services, so it is good practice to keep them together in a folder for each module.{{% /alert %}}
+    {{% alert color="info" %}}The Published OData service functions as an API to your app. Some apps may have several published services, so it is good practice to keep them together in a folder for each module.{{% /alert %}}
 
-2. In the **Domain Model**, right-click the **Customer** entity and select **Expose as OData resource…**.
+2. In the **Domain model**, right-click the **Customer** entity and select **Expose as OData resource…**.
 
     {{< figure src="/attachments/catalog/share-data/expose-as-odata-resource.png" >}}
 
-3. In the **Select Published OData Service** dialog box, select the **MyFirstModule** > **APIs** folder and click **New** to add a new OData service to this folder.
+3. In the **Select Published OData Service** dialog box, select **MyFirstModule** > **APIs** and click **New** to add a new OData service to this folder.
 
     {{< figure src="/attachments/catalog/share-data/select-published-odata-service.png" >}}
 
-4. Name the published OData service *{yourname}CustomerODataService* and click **OK**.
+4. Name the Published OData service *{yourname}CustomerODataService* and click **OK**.
 
     The new **{yourname}CustomerODataService** is added to the module and the **Edit published resource** dialog box is displayed for the entity **Customer**. 
 
     {{< figure src="/attachments/catalog/share-data/edit-published-resource-box.png" >}}
 
-    {{% alert color="info" %}}  Make a note of the **Exposed set name**. This defaults to the **Exposed name** with an "**s"** added to the end. When the service is registered in the Catalog, the **Exposed set name** will be displayed as the available **Dataset**. {{% /alert %}}
+    {{% alert color="info" %}}  Make a note of the **Exposed set name**. This defaults to the **Exposed name** with an "**s"** added to the end. When the service is registered in the Catalog, the **Exposed set name** is displayed as the available **Dataset**. {{% /alert %}}
 
 5. Click **OK** twice to display the **OData Service** document that will be registered in the Catalog. In the **General** tab, notice the **Version** number. 
 
@@ -94,7 +94,7 @@ Do the following:
 
     Under **Entities**, the **Customer** entity is listed. The details of the entity are displayed on the right. To expose more entities in the service, add them on this page.
 
-6. Click **Publish** in the top bar to deploy the app and publish it. When prompted, click **Save and continue** to save any unsaved changes to the app.     
+6. Click **Publish** in the top bar to deploy and publish the app. When prompted, click **Save and continue** to save any unsaved changes to the app.     
 
 7. The app is deployed, and the OData service is automatically registered in the Catalog. Click **View App** to open the app in a browser. 
 8. On the app's home page, click **Customers Overview**.

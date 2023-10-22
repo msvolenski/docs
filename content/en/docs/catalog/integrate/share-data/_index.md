@@ -164,13 +164,13 @@ To see an example of consumed data being updated when data is changed in the ori
 
 1. Make sure both apps are published in Mendix Studio Pro, then open both apps in separate browser windows. 
 2. Make a change to the customer list in **{yourname}CustomerServiceApp**, such as adding a few more customers or editing some existing entries.
-3. Refresh the **{yourname}CustomerActionsApp** window by doing a **Search** to see the changes in the data displayed. 
+3. Refresh the **{yourname}CustomerActionsApp** window and do a search to see the changes in the data displayed. 
 
-Congratulations, you have successfully used the Catalog to share data between Mendix apps! You can now see your new apps in your Landscape. 
+You can now see your new apps in your Landscape. 
 
 ## 9 Viewing Your Apps in the Landscape
 
-You can view the two apps that you have created in the Landscape and see how they are connected:
+You can view the two apps you have created in the Landscape and see how they are connected:
 
 1. Open the [Catalog](https://catalog.mendix.com/#/home) home page.
 2. Find your service using the search pane. Remember to use the filter to ensure you can see **Sandbox** apps. 
@@ -180,4 +180,4 @@ You can view the two apps that you have created in the Landscape and see how the
 
     The service **{yourname}CustomerODataAPI** is linked by a solid line to the running instance of **{yourname}CustomerCustomerServiceApp**, which is deployed as a Free App.
 
-    The service is also linked by a dotted grey line to **{yourname}CustomerActionsApp**. The arrow indicates that **{yourname}CustomerActionsApp** is making a call to **{yourname}CustomerODataAPI** for data. If you click on **1 Dataset** on this dotted line, the datasets that are being consumed will be listed in the metadata panel on the right.
+    The service is also linked by a dotted grey line to **{yourname}CustomerActionsApp**. The arrow indicates that **{yourname}CustomerActionsApp** is making a call to **{yourname}CustomerODataAPI** for data. If you click **1 Dataset** on this dotted line, the datasets that are being consumed will be listed in the metadata panel on the right.

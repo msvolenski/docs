@@ -53,8 +53,8 @@ Access to the data is through the published REST OData service, with reading, qu
 The following operations are affected by using external entities in a consuming app:
 
 * Aggregations – you can count a list of external entities, but you cannot show other aggregations such as sum, average, minimum, and maximum.
-    * [OData v3.0](https://www.odata.org/documentation/odata-version-3-0/) does not support these operations; the only exception is that you can use the [aggregate list](/refguide/aggregate-list/) microflow activity, which for all aggregations except **Count** will retrieve everything and perform the aggregation in memory
-* [XPath](/refguide/xpath/) – you can use XPath to filter external entities; all XPath constructs are supported, except the following:
+    * [OData v3.0](https://www.odata.org/documentation/odata-version-3-0/) does not support these operations; the only exception is that you can use the [aggregate list](/refguide/aggregate-list/) microflow activity, which for all aggregations (except **Count**) will retrieve everything and perform the aggregation in memory
+* [XPath](/refguide/xpath/) – you can use XPath to filter external entities. All XPath constructs are supported, except the following:
     * Three conversions from date/time: `day-of-year-from-dateTime`, `weekday-from-dateTime`, and `week-from-dateTime`
     * Aggregations: `avg()`, `max()`, `min()`, and `sum()`
     * Using an association between a local and an external entity
@@ -62,7 +62,7 @@ The following operations are affected by using external entities in a consuming 
     * [Exist expressions](/refguide/xpath-expressions/#exist) (filtering on whether an associated object exists)
     * Filtering in the middle of a path (such as `[Module.Car_Person/Module.Car[Brand='BMW']/Module.Car_Plate/Module.Plate/Number='123']`, where`[Brand='BMW']` appears in the middle of the path)
     * Expressions with `reverse()` (as mentioned in [Querying Over Self-References](/refguide/query-over/))
-* [OQL](/refguide/oql/) – you cannot define OQL queries on external entities (for example, in datasets)
+* [OQL](/refguide/oql/) – you cannot define OQL queries on external entities (for example, in datasets).
 
 ## 4 Registered Datasets in OData Services from Non-Mendix Systems
 
